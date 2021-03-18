@@ -55,7 +55,7 @@ Output : $ 1,257,856
 <CurrencyFormatter value={1257856} currency='INR' />
 ```
 
-Output : ₹ 12,57,856
+Output : ₹ 1,257,856
 
 ```jsx
 <CurrencyFormatter value={1257856} thousandSeparator={true} currency='GBP' />
@@ -64,7 +64,12 @@ Output : ₹ 12,57,856
 Output : £ 1,257,856
 
 ```jsx
-<CurrencyFormatter value={1257856.85} currency='INR' isFloat={true} />
+<CurrencyFormatter
+  value={1257856.85}
+  currency='INR'
+  thousandSeparator={false}
+  isFloat={true}
+/>
 ```
 
 Output : ₹ 12,57,856.85
