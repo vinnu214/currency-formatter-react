@@ -7,8 +7,17 @@ import CurrencyFormatter from 'currency-formatter-react'
 import 'currency-formatter-react/dist/index.css'
 
 const App = () => {
-  // return <ExampleComponent text="Create React Library Example 😄" />
-  return <CurrencyFormatter value={1257600} currency='INR' />
+  return (
+    <React.Fragment>
+      <CurrencyFormatter value={-1257600.505} currency='JPY' isFloat={true} />
+      <CurrencyFormatter
+        value={1257856.85}
+        thousandSeparator={false}
+        currency='INR'
+        isFloat={true}
+      />
+    </React.Fragment>
+  )
 }
 
 export default App

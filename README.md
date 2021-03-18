@@ -20,11 +20,12 @@ import CurrencyFormatter from 'currency-formatter-react'
 
 ### Props
 
-| Props             | Options | Default | Description                            |
-| ----------------- | ------- | ------- | -------------------------------------- |
-| value             | number  | none    | Value which need to be format          |
-| thousandSeparator | boolean | false   | Add thousand separators on number      |
-| currency          | string  | none    | Add Currency Code (INR , USD , GBP ..) |
+| Props             | Options | Default | Description                              |
+| ----------------- | ------- | ------- | ---------------------------------------- |
+| value             | number  | none    | Value which need to be format            |
+| thousandSeparator | boolean | true    | Add thousand separators on number        |
+| currency          | string  | USD     | Add Currency Code (INR , USD , GBP ..)   |
+| isFloat           | boolean | false   | make this prop to true if value is float |
 
 ### Supported Currencies
 
@@ -48,19 +49,25 @@ import CurrencyFormatter from 'currency-formatter-react'
 <CurrencyFormatter value={1257856} thousandSeparator={true} currency='USD' />
 ```
 
-Output : $1,257,856
+Output : $ 1,257,856
 
 ```jsx
 <CurrencyFormatter value={1257856} currency='INR' />
 ```
 
-Output : ₹12,57,856
+Output : ₹ 12,57,856
 
 ```jsx
 <CurrencyFormatter value={1257856} thousandSeparator={true} currency='GBP' />
 ```
 
-Output : £1,257,856
+Output : £ 1,257,856
+
+```jsx
+<CurrencyFormatter value={1257856.85} currency='INR' isFloat={true} />
+```
+
+Output : ₹ 12,57,856.85
 
 ## License
 
