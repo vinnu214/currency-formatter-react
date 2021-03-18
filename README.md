@@ -41,7 +41,7 @@ import CurrencyFormatter from 'currency-formatter-react'
 | SGD           | Singapore Dollar   | $      |
 | THB           | Baht               | ฿      |
 | USD           | US Dollar          | $      |
-| ZAR           | Rand               | r      |
+| ZAR           | Rand               | R      |
 
 ### Examples
 
