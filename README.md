@@ -43,7 +43,7 @@ import CurrencyFormatter from 'currency-formatter-react'
 | USD           | US Dollar          | $      |
 | ZAR           | Rand               | r      |
 
-### Example
+### Examples
 
 ```jsx
 <CurrencyFormatter value={1257856} thousandSeparator={true} currency='USD' />
